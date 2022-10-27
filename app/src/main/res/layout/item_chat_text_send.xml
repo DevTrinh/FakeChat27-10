@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/type2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginTop="@dimen/dp1"
+    android:orientation="horizontal"
+    android:gravity="right"
+    >
+
+    <TextView
+        android:id="@+id/tvSmsType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp1"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingTop="@dimen/dp7"
+        android:paddingBottom="@dimen/dp7"
+        android:background="@drawable/bg_chat_text_send"
+        android:maxWidth="@dimen/dp200"
+        android:text="."
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp16" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatarType2"
+        android:layout_width="@dimen/dp12"
+        android:layout_height="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:src="@drawable/iv_user_default" />
+
+    <TextView
+        android:id="@+id/tv_type_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

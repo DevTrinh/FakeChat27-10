@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fake Chat</string>
+    <string name="txt_chats">Chats</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_sms">SMS</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fl_contains_avatar"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_alignParentLeft="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:src="@drawable/iv_user_default" />
+
+        <ImageView
+            android:id="@+id/iv_is_active"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingTop="@dimen/dp8"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_online" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp1"
+        android:layout_toRightOf="@+id/fl_contains_avatar"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp7"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp7"
+        android:background="@drawable/bg_chat_text_receive"
+        android:maxWidth="@dimen/dp200"
+        android:maxEms="12"
+        android:text="Type 1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp16" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_type_1"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:src="@drawable/iv_user_default" />
+
+</RelativeLayout>
