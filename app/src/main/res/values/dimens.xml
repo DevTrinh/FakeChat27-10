@@ -31,4 +31,9 @@
     <dimen name="dp165">165dp</dimen>
     <dimen name="dp110">110dp</dimen>
     <dimen name="dp120">120dp</dimen>
+    <dimen name="dp35">35dp</dimen>
+    <dimen name="dp56">56dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp25">25dp</dimen>
 </resources>

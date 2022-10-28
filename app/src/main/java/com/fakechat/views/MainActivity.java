@@ -52,11 +52,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<ItemShortcut> testAddList(){
+        boolean isOnline = true;
         for (int i = 0; i<10; i++){
+            isOnline = i < 6;
             if (i< 1){
-                itemShortcutList.add(new ItemShortcut(R.drawable.iv_test, true, "Trinh van manh"));
+                itemShortcutList.add(new ItemShortcut(R.drawable.iv_test, true, false, "Start call"));
             } else {
-                itemShortcutList.add(new ItemShortcut(R.drawable.iv_test, false, "nameShortcut"));
+                itemShortcutList.add(new ItemShortcut(R.drawable.iv_test, false, isOnline, "Tống Mai Linh"));
             }
 
         }

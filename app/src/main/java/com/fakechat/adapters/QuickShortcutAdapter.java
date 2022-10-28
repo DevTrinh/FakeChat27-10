@@ -2,10 +2,10 @@ package com.fakechat.adapters;
 
 import static com.fakechat.utils.Contains.FIRST_VIEW_SHORTCUT;
 
-import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.fakechat.R;
 import com.fakechat.interfaces.OnClickWithPosition;
 import com.fakechat.models.items.ItemShortcut;
-import com.fakechat.utils.Contains;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +57,11 @@ public class QuickShortcutAdapter extends RecyclerView.Adapter {
                 ItemShortcutViewHolder viewHolder = (ItemShortcutViewHolder) holder;
                 viewHolder.ivShortcut.setImageResource(itemShortcut.getDrawableShortcut());
                 viewHolder.tvShortcutName.setText(itemShortcut.getNameShortcut());
+                if (itemShortcut.isOnline()){
+                    viewHolder.ivOnline.setVisibility(View.VISIBLE);
+                } else {
+                    viewHolder.ivOnline.setVisibility(View.GONE);
+                }
                 break;
         }
     }
@@ -82,10 +86,12 @@ public class QuickShortcutAdapter extends RecyclerView.Adapter {
     public static class ItemShortcutViewHolder extends RecyclerView.ViewHolder{
         public final CircleImageView ivShortcut;
         private final TextView tvShortcutName;
+        private final ImageView ivOnline;
         public ItemShortcutViewHolder(@NonNull View itemView) {
             super(itemView);
+            ivOnline = itemView.findViewById(R.id.iv_online);
             tvShortcutName = itemView.findViewById(R.id.tv_name_shortcut);
-            ivShortcut = itemView.findViewById(R.id.iv_circle);
+            ivShortcut = itemView.findViewById(R.id.iv_item_shortcut);
         }
     }
 

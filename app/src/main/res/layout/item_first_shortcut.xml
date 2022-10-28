@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_item_first_shortcut"
-        android:layout_width="@dimen/dp72"
-        android:layout_height="@dimen/dp72"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="@dimen/dp56"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:padding="@dimen/dp10"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="@dimen/dp16"
         android:src="@drawable/iv_test"/>
 
     <TextView
@@ -20,8 +23,12 @@
         app:layout_constraintTop_toBottomOf="@id/iv_item_first_shortcut"
         app:layout_constraintLeft_toLeftOf="@id/iv_item_first_shortcut"
         app:layout_constraintRight_toRightOf="@id/iv_item_first_shortcut"
-        android:text="Trịnh Van Manh"
-        android:textSize="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp6"
+        android:maxWidth="@dimen/dp32"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_start_call"
+        android:textSize="@dimen/dp12"
         android:textColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

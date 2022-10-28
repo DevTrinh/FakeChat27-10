@@ -41,7 +41,7 @@
         android:paddingTop="@dimen/dp7"
         android:paddingRight="@dimen/dp15"
         android:paddingBottom="@dimen/dp7"
-        android:background="@drawable/bg_chat_text_receive"
+        android:background="@drawable/bg_chat_receive_single"
         android:maxWidth="@dimen/dp200"
         android:maxEms="12"
         android:text="Type 1"

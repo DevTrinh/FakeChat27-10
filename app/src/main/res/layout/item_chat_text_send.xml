@@ -18,7 +18,7 @@
         android:paddingRight="@dimen/dp15"
         android:paddingTop="@dimen/dp7"
         android:paddingBottom="@dimen/dp7"
-        android:background="@drawable/bg_chat_text_send"
+        android:background="@drawable/bg_chat_send_single"
         android:maxWidth="@dimen/dp200"
         android:text="."
         android:textColor="@color/white"

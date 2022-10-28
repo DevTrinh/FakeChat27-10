@@ -5,24 +5,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_circle"
-        android:layout_width="@dimen/dp72"
-        android:layout_height="@dimen/dp72"
+        android:id="@+id/iv_item_shortcut"
+        android:layout_width="@dimen/dp56"
+        android:layout_height="@dimen/dp56"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:paddingLeft="@dimen/dp16"
-        android:paddingTop="@dimen/dp10"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp14"
         android:src="@drawable/iv_test"/>
+
+    <ImageView
+        android:id="@+id/iv_online"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintRight_toRightOf="@id/iv_item_shortcut"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_shortcut"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp"
+        android:src="@drawable/ic_online"/>
 
     <TextView
         android:id="@+id/tv_name_shortcut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/iv_circle"
-        app:layout_constraintLeft_toLeftOf="@id/iv_circle"
-        app:layout_constraintRight_toRightOf="@id/iv_circle"
-        android:text="Trịnh Van Manh"
-        android:textSize="@dimen/dp10"
+        app:layout_constraintTop_toBottomOf="@id/iv_item_shortcut"
+        app:layout_constraintLeft_toLeftOf="@id/iv_item_shortcut"
+        app:layout_constraintRight_toRightOf="@id/iv_item_shortcut"
+        android:layout_marginTop="@dimen/dp6"
+        android:maxWidth="@dimen/dp56"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto"
+        android:text="@string/txt_start_call"
+        android:textSize="@dimen/dp12"
         android:textColor="@color/black"
         />
 
